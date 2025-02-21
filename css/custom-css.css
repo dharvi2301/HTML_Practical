@@ -1,0 +1,206 @@
+.flipcart-plus-logo{
+  height:4rem;
+  width:4rem;
+}
+
+.navigation-bar{
+  background-color: #0d6efd;
+}
+
+.btn {
+  background-color:white;
+}
+
+.btn:hover{
+  background-color: white;
+}
+
+.search-bar{
+  width:50%;
+}
+
+.login{
+  width:15%;
+  color: #0d6efd;
+  border-radius: 0%;
+  font-weight: bold;
+}
+
+.dropdown-more{
+  background-color: #0d6efd !important;
+  color: white !important;
+}
+
+.dropdown-more:hover{
+  background-color: #0d6efd;
+  color: white;
+}
+
+.cart{
+  color: white;
+}
+
+.fa{
+  color:white
+}
+
+.card {
+  width: 220px; /* Set a smaller width for the card */
+  margin: 10px; /* Optional: Adjust the margin to create space between cards */
+  border: none;
+}
+
+.card-img-top {
+  width: 4rem; /* Ensure the image fills the card width */
+  height: 4rem; /* Maintain the image aspect ratio */
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 10px; /* Reduce padding */
+}
+
+.card-text {
+  font-size: 14px; /* Reduce the font size of the text */
+  color: #333;
+  font-weight: bold;
+}
+
+#dropdownMenuLink{
+  background-color: white;
+  color: black;
+  font-size: 14px;
+}
+
+.layout{
+  background-color: #f1f3f6;
+}
+
+.carousel{
+  background-color: white;
+  height:auto;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.variety{
+  height:5rem;
+  width:5rem;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.title{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.offers{
+  color: #388e3c;
+  font-weight:lighter
+}
+
+.deals{
+  color:#919191;
+  font-weight: lighter;
+}
+
+.timer{
+  color: #7f7f7f;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.background-image-div {
+  background-image: url('/assets/ads.jpg');
+  background-size: cover; /* Ensure the image covers the div */
+  background-position: center; /* Center the image */
+  height: auto; /* Set a height if needed */
+}
+
+.btn-primary{
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 0%;
+}
+
+.btn-primary:hover{
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+}
+
+.shop-now{
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / 5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.item3 {
+  grid-column: 1 / 6; /* This will make item3 span across all 3 columns */
+}
+
+.second-grid{
+  background-color: #f1f3f6;
+}
+
+.nav-container {
+  max-width: 1248px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.category-nav {
+  background-color: white;
+  padding: 12px 0;
+}
+
+.nav-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+  font-size: small;
+}
+ 
+.nav-item img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+
+

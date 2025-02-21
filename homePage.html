@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--The below is displayed in the browser's window-->
+  <title>Flipcart</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!--Bootstrap links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!--Custom and other links-->
+  <link rel="stylesheet" href="./css/custom-css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row navigation-bar">
+      <!-- Flipkart Logo Section -->
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-end">
+        <img src="./assets/flipcart-plus-logo.webp" alt="flipcart-plus-logo" class="flipcart-plus-logo">
+        
+          <!-- Search Bar Section for large screens -->
+          <div class="search-bar d-flex align-items-center justify-content-center mx-2 d-none d-sm-flex">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for products, brands and more" aria-label="Search" aria-describedby="search-addon">
+              <button class="btn" type="button" id="search-addon">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+  
+          <!-- Search Icon Section for small and medium screens -->
+          <div class="search-icon d-flex justify-content-center align-items-center mx-2 d-sm-none">
+            <button class="btn" type="button" id="search-addon">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+      </div>
+      
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 d-flex justify-content-center align-items-center main">
+        <!-- Login button visible only on extra large screens and above -->
+        <button type="button" class="btn login d-none d-lg-block">Login</button>
+
+          <!-- Person Icon visible only on medium and smaller screens -->
+          <div class="d-lg-none mx-2">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+      
+        <!-- Dropdown for "More" -->
+          <div class="dropdown show mx-2">
+            <a class="btn dropdown-toggle dropdown-more" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More
+            </a>
+        
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+      
+        <!-- Cart Icon -->
+        <div class="mx-2 cart d-none d-lg-block">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span class="mx-1">Cart</span>
+        </div>
+
+        <div class="d-lg-none mx-2">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>  
+      </div>
+    </div>
+   
+    <!--Second Navbar-->
+   <nav class="category-nav">
+    <div class="nav-container">
+      <a href="#" class="nav-item" title="Explore Top Offers">
+        <img src="./assets/Offers.jpg" alt="Offers">
+        <span>Top Offers</span>
+      </a>
+      <a href="#" class="nav-item" title="Explore Grocery">
+        <img src="./assets/Surf_Excel.jpg" alt="Grocery">
+        <span>Grocery</span>
+      </a>
+      <a href="#" class="nav-item" title="Explore Mobiles">
+          <img src="./assets/mobiles.jpg" alt="Mobiles">
+          <span>Mobiles</span>
+      </a>
+      <a href="#" class="nav-item" title="Explore Fashion">
+          <img src="./assets/fashion.jpg" alt="Fashion">
+          <span>
+              Fashion
+              <i class="fa-solid fa-chevron-down"></i>
+          </span>
+      </a>
+      <a href="#" class="nav-item" title="Explore Electronics">
+          <img src="./assets/electronics.jpg" alt="Electronics">
+          <span>
+              Electronics
+              <i class="fa-solid fa-chevron-down"></i>
+          </span>
+      </a>
+      <a href="#" class="nav-item" title="Explore Home">
+          <img src="./assets/home.jpg" alt="Home">
+          <span>
+              Home
+              <i class="fa-solid fa-chevron-down"></i>
+          </span>
+      </a>
+    <a href="#" class="nav-item" title="Explore Appliances">
+        <img src="./assets/appliances.jpg" alt="Appliances">
+        <span>
+            Appliances
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
+    </a>
+    <a href="#" class="nav-item" title="Explore Travel">
+        <img src="./assets/travel.jpg" alt="Travel">
+        <span>Travel</span>
+    </a>
+    <a href="#" class="nav-item" title="Explore Beauty, Toys & More">
+        <img src="./assets/toys.jpg" alt="Beauty, Toys & More">
+        <span>
+            Beauty, Toys & More
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
+    </a>
+    </div>
+   </nav>
+    
+   <!--Main layout-->
+    <div class="row border second-grid">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10">
+        <div class="grid-container w-100">
+          <div class="item1">
+            <div class="container carousel d-flex align-items-center justify-content-start border-bottom">
+              <h5>Deals Of The Day 
+                  <span>&#128338;</span><span class="timer">  22:07:36 Left</span>               
+                </h5>      
+              <button type="button" class="btn btn-primary ms-auto mt-2 mb-2">View All</button>             
+          </div>                  
+            <div class="container carousel mb-3">  
+              <div id="carouselExample" class="carousel slide " data-bs-ride="carousel">                
+                <div class="carousel-inner">
+              <!-- First Group of Cards -->
+              <div class="carousel-item active">
+                <div class="row">               
+                    <div class="card">
+                      <img src="./assets/watch.jpg" class="card-img-top variety" alt="Watch">
+                      <div class="card-body">
+                        <h5 class="card-title title">Casio,Fastrack,Sonata</h5>
+                        <p class="card-text offers">Upto 80% + Extra 10% Off</p>
+                        <p class="card-text deals">Knockout Deals!</p>                
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="./assets/temple.jpg" class="card-img-top variety" alt="Temple">
+                      <div class="card-body">
+                        <h5 class="card-title title">Home Temples & more</h5>
+                        <p class="card-text offers">Extra 10% Off</p>
+                        <p class="card-text deals">Space Saving furniture</p>
+                      </div>
+                    </div>  
+                    <div class="card">
+                      <img src="./assets/tablet.jpg" class="card-img-top variety" alt="Tablet">
+                      <div class="card-body">
+                        <h5 class="card-title title">Premium Tablet Cases</h5>
+                        <p class="card-text offers">Extra 10% Off</p>
+                        <p class="card-text deals">For All Top Models</p>                
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="./assets/home-decor.jpg" class="card-img-top variety" alt="Home-Decor">
+                      <div class="card-body">
+                        <h5 class="card-title title">Best Of Home Decor</h5>
+                        <p class="card-text offers">From  &#8377;70</p>
+                        <p class="card-text deals">Lowest Price Ever</p>                
+                      </div>
+                    </div>                              
+                    <div class="card">
+                      <img src="./assets/jacket.jpg" class="card-img-top variety" alt="Jacket">
+                      <div class="card-body">
+                        <h5 class="card-title title">Metronaut,Provogue & ...</h5>
+                        <p class="card-text offers">From  &#8377;249+Extra 10% Off</p>
+                        <p class="card-text deals">Jackets,Dresses & More</p>                
+                      </div>
+                    </div>   
+                </div>
+              </div>    
+              <!-- Second Group of Cards -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="card">
+                    <img src="./assets/phone.jpg" class="card-img-top variety" alt="Phone">
+                    <div class="card-body">
+                      <h5 class="card-title title">LAVA A1500</h5>
+                      <p class="card-text offers">Flat  &#8377;830 Off</p>
+                      <p class="card-text deals">Now &#8377;999</p>                
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/cycle.jpg" class="card-img-top variety" alt="Cycle">
+                    <div class="card-body">
+                      <h5 class="card-title title">Electric Cycle</h5>
+                      <p class="card-text offers">Upto &#8377;40% Off</p>
+                      <p class="card-text deals">Grab Now</p>                
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/toy.jpg" class="card-img-top variety" alt="Toy">
+                    <div class="card-body">
+                      <h5 class="card-title title">Soft Toys</h5>
+                      <p class="card-text offers">Upto &#8377;70% Off</p>
+                      <p class="card-text deals">Grab Now</p>                
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/puzzle.jpg" class="card-img-top variety" alt="Puzzles">
+                    <div class="card-body">
+                      <h5 class="card-title title">Puzzles</h5>
+                      <p class="card-text offers">From &#8377;79</p>
+                      <p class="card-text deals">Grab Now</p>                
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span>Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span>Next</span>
+            </button>
+          </div>
+        </div>
+          </div>
+          <div class="background-image-div"></div>
+          <div class="container-fluid item3">
+           <div class="row">
+            <div class="d-flex border-bottom">
+              <div class="d-flex flex-column">
+                <h5 class="mx-2">Books and Music Instruments</h5>               
+              </div>
+              <button type="button" class="btn btn-primary ms-auto mt-2 mb-2" style="position: relative; right: 20px;">View All</button>
+            </div>   
+           </div>
+              <div id="carouselExample2" class="carousel slide " data-bs-ride="carousel">  
+                <div class="carousel-inner">
+              <!-- First Group of Cards -->
+              <div class="carousel-item active">
+                <div class="row">               
+                    <div class="card">
+                      <img src="./assets/harmonium.jpg" class="card-img-top variety" alt="Harmonium">
+                      <div class="card-body">
+                        <h5 class="card-title title">Harmoniums</h5>
+                        <p class="card-text offers">Upto 60% Off</p>
+                        <p class="card-text deals">Shop Now!</p>                
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="./assets/flute.jpg" class="card-img-top variety" alt="Flute">
+                      <div class="card-body">
+                        <h5 class="card-title title">Flute</h5>
+                        <p class="card-text offers">Upto 80% Off</p>
+                        <p class="card-text deals">Shop Now!</p>
+                      </div>
+                    </div>  
+                    <div class="card">
+                      <img src="./assets/guitars.jpg" class="card-img-top variety" alt="Guitars">
+                      <div class="card-body">
+                        <h5 class="card-title title">Acoustic Guitars</h5>
+                        <p class="card-text offers">From  &#8377;1799</p>
+                        <p class="card-text deals">Juarels,Revel....</p>                
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="./assets/accessories.jpg" class="card-img-top variety" alt="Musical Accessories">
+                      <div class="card-body">
+                        <h5 class="card-title title">Musical Accessories</h5>
+                        <p class="card-text offers">Upto 80% Off</p>
+                        <p class="card-text deals">Shop Now!</p>                
+                      </div>
+                    </div>                              
+                    <div class="card">
+                      <img src="./assets/mircophone.jpg" class="card-img-top variety" alt="Mircophone">
+                      <div class="card-body">
+                        <h5 class="card-title title">Mircophone Accessories</h5>
+                        <p class="card-text offers">Upto 80% Off</p>
+                        <p class="card-text deals">Shop Now!</p>                
+                      </div>
+                    </div>   
+                </div>
+              </div>    
+              <!-- Second Group of Cards -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="card">
+                    <img src="./assets/book_1.jpg" class="card-img-top variety" alt="Percy_Jackson">
+                    <div class="card-body">
+                      <h5 class="card-title title">Percy Jackson</h5>
+                      <p class="card-text offers">Flat  &#8377;830 Off</p>
+                      <p class="card-text deals">Grab Now!</p>                
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/story.jpg" class="card-img-top variety" alt="Cycle">
+                    <div class="card-body">
+                      <h5 class="card-title title">Story Thieves</h5>
+                      <p class="card-text offers">Upto &#8377;40% Off</p>
+                      <p class="card-text deals">Grab Now</p>                
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/ruskin.jpg" class="card-img-top variety" alt="Toy">
+                    <div class="card-body">
+                      <h5 class="card-title title">Ruskin Bond</h5>
+                      <p class="card-text offers">Upto &#8377;70% Off</p>
+                      <p class="card-text deals">Grab Now</p>                
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./assets/piano.jpg" class="card-img-top variety" alt="Puzzles">
+                    <div class="card-body">
+                      <h5 class="card-title title">Piano</h5>
+                      <p class="card-text offers">From &#8377;79</p>
+                      <p class="card-text deals">Grab Now</p>                
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span>Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span>Next</span>
+            </button>
+          </div>
+        </div>
+           </div>
+          </div>  
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    </div>
+   
+    
+  <!--Bootstrap Javascript Links-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
